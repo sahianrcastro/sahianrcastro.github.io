@@ -14,13 +14,6 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "pnpm": {
-  "onlyBuiltDependencies": [
-    "@parcel/watcher",
-    "esbuild",
-    "sharp"
-  ]
-},
   "dependencies": {
     "@astrojs/check": "0.9.9",
     "@astrojs/mdx": "6.0.2",
