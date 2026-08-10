@@ -21,7 +21,6 @@ export const nav: Nav = {
         { label: 'Inicio', href: '/', target: '_self' },
         { label: 'Presentación', href: '/presentation', target: '_self' },
         { label: 'Evidencias', href: '/project', target: '_self' },
-        { label: 'Sobre mí', href: '/blog', target: '_self' },
     ],
 };
 
