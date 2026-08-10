@@ -1,4 +1,9 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import Cards from "../components/Cards.astro";
+import { pageTag, pageDescription, homeTdk } from "../data/content";
+---
 
 <BaseLayout
 	title={homeTdk.title || ''}
@@ -6,18 +11,20 @@
 	keywords={homeTdk.keywords || ''}
 >
 
-<div class="section hero">
+	<div class="section hero">
 
-	<div class="container">
+		<div class="container">
 
-		<SectionHeader
-			tag={pageTag.index}
-			description={pageDescription.index}>
-			Portafolio Académico
-		</SectionHeader>
+			<SectionHeader
+				tag={pageTag.index}
+				description={pageDescription.index}>
+				Portafolio Académico
+			</SectionHeader>
 
-		<Cards />
+			<Cards />
+
+		</div>
 
 	</div>
 
-</div>
+</BaseLayout>
