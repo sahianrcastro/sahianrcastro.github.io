@@ -19,7 +19,7 @@ export const nav: Nav = {
     avatar: '/assets/sho.jpeg',
     items: [
         { label: 'Inicio', href: '/', target: '_self' },
-        { label: 'Presentación', href: '/about', target: '_self' },
+        { label: 'Presentación', href: '/presentation', target: '_self' },
         { label: 'Evidencias', href: '/project', target: '_self' },
         { label: 'Sobre mí', href: '/blog', target: '_self' },
     ],

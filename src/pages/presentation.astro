@@ -1,0 +1,58 @@
+---
+import BlogPostLayout from "../layouts/BlogPostLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+---
+
+<BlogPostLayout
+	title="Presentación | Sahian Castro"
+	description="Video de presentación de Sahian Castro"
+	keywords="Sahian Castro, presentación, portafolio"
+>
+
+	<div class="post">
+		<main class="post-wrapper about">
+
+			<SectionHeader
+				tag="PRESENTACIÓN"
+				description="Conoce un poco sobre mí.">
+				Presentación
+			</SectionHeader>
+
+			<section class="border-top" style="padding-top: 2rem;">
+				<div class="content">
+
+					<div>
+						<img
+							src="/assets/sho.jpeg"
+							alt="Foto de Sahian"
+							width="88"
+							height="88"
+							class="portrait"
+						/>
+					</div>
+
+					<p>
+						En este video te cuento un poco sobre mí,
+						mis intereses y lo que espero aprender durante
+						Bases de Datos 1.
+					</p>
+
+					<div style="margin-top: 2rem;">
+						<iframe
+							width="100%"
+							height="500"
+							src="https://youtu.be/nZ00EZV9GJk"
+							title="Video de presentación de Sahian Castro"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen>
+						</iframe>
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+	</div>
+
+</BlogPostLayout>
