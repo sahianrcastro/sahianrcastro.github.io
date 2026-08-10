@@ -1,38 +1,50 @@
 [
-    {
-        "id": "1",
-        "cover": "/assets/cover/modelado.jpg",
-        "title": "Modelado de Bases de Datos",
-        "description": "Evidencia de aprendizaje sobre el modelado de bases de datos y la representación de entidades y relaciones.",
-        "category": "modelado",
-        "tag": "Modelado",
-        "date": "2026-08-09"
-    },
-    {
-        "id": "2",
-        "cover": "/assets/cover/normalizacion.jpg",
-        "title": "Normalización",
-        "description": "Ejercicios y evidencias del proceso de normalización de bases de datos.",
-        "category": "normalizacion",
-        "tag": "Normalización",
-        "date": "2026-08-09"
-    },
-    {
-        "id": "3",
-        "cover": "/assets/cover/sql.jpg",
-        "title": "SQL",
-        "description": "Prácticas y ejercicios realizados utilizando SQL para crear, consultar y manipular datos.",
-        "category": "sql",
-        "tag": "SQL",
-        "date": "2026-08-09"
-    },
-    {
-        "id": "4",
-        "cover": "/assets/cover/proyecto.jpg",
-        "title": "Proyecto de Bases de Datos 1",
-        "description": "Proyecto desarrollado durante la asignatura aplicando los conceptos aprendidos durante el semestre.",
-        "category": "proyecto",
-        "tag": "Proyecto",
-        "date": "2026-08-09"
-    }
+	{
+		"id": "1",
+		"cover": "/assets/cover/modelado.jpg",
+		"title": "Modelado de Bases de Datos",
+		"desc": "Evidencia de aprendizaje sobre el modelado de bases de datos y la representación de entidades y relaciones.",
+		"category": "modelado",
+		"tag": "Modelado",
+		"date": "2026-08-09",
+		"url": "",
+		"detail": "",
+		"mark": ""
+	},
+	{
+		"id": "2",
+		"cover": "/assets/cover/normalizacion.jpg",
+		"title": "Normalización",
+		"desc": "Ejercicios y evidencias del proceso de normalización de bases de datos.",
+		"category": "normalizacion",
+		"tag": "Normalización",
+		"date": "2026-08-09",
+		"url": "",
+		"detail": "",
+		"mark": ""
+	},
+	{
+		"id": "3",
+		"cover": "/assets/cover/sql.jpg",
+		"title": "SQL",
+		"desc": "Prácticas y ejercicios realizados utilizando SQL para crear, consultar y manipular datos.",
+		"category": "sql",
+		"tag": "SQL",
+		"date": "2026-08-09",
+		"url": "",
+		"detail": "",
+		"mark": ""
+	},
+	{
+		"id": "4",
+		"cover": "/assets/cover/proyecto.jpg",
+		"title": "Proyecto de Bases de Datos 1",
+		"desc": "Proyecto desarrollado durante la asignatura aplicando los conceptos aprendidos durante el semestre.",
+		"category": "proyecto",
+		"tag": "Proyecto",
+		"date": "2026-08-09",
+		"url": "",
+		"detail": "",
+		"mark": ""
+	}
 ]

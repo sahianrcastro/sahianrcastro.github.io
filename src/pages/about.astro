@@ -1,86 +1,91 @@
 ---
+import BlogPostLayout from "../layouts/BlogPostLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import { pageTag, pageDescription, aboutTdk } from "../data/content";
+---
+
 <BlogPostLayout
 	title={aboutTdk.title || ''}
 	description={aboutTdk.description || ''}
 	keywords={aboutTdk.keywords || ''}
 >
 
-<div class="post">
-	<main class="post-wrapper about">
+	<div class="post">
+		<main class="post-wrapper about">
 
-		<SectionHeader
-			tag={pageTag.about}
-			description={pageDescription.about}>
-			Sobre mí
-		</SectionHeader>
+			<SectionHeader
+				tag={pageTag.about}
+				description={pageDescription.about}>
+				Sobre mí
+			</SectionHeader>
 
-		<section class="border-top" style="padding-top: 2rem;">
-			<div class="content">
+			<section class="border-top" style="padding-top: 2rem;">
+				<div class="content">
 
-				<div>
-					<Image
-						src={myPortrait}
-						alt="Foto de Sahian"
-						width="88"
-						height="88"
-						class="portrait"
-					/>
+					<div>
+						<img
+							src="/assets/sho.jpeg"
+							alt="Foto de Sahian"
+							width="88"
+							height="88"
+							class="portrait"
+						/>
+					</div>
+
+					<p>
+						Soy estudiante y actualmente me encuentro construyendo
+						mi formación en el área de la tecnología y el desarrollo
+						de software.
+					</p>
+
+					<p>
+						Este portafolio representa una parte de mi proceso
+						académico y profesional. Aquí iré recopilando proyectos,
+						actividades y evidencias que permitan observar mi
+						progreso a lo largo de mi formación.
+					</p>
+
 				</div>
+			</section>
 
-				<p>
-					Soy estudiante y actualmente me encuentro construyendo
-					mi formación en el área de la tecnología y el desarrollo
-					de software.
-				</p>
+			<section>
+				<h3 class="post-title">Lo que estoy aprendiendo</h3>
 
-				<p>
-					Este portafolio representa una parte de mi proceso
-					académico y profesional. Aquí iré recopilando proyectos,
-					actividades y evidencias que permitan observar mi
-					progreso a lo largo de mi formación.
-				</p>
+				<div class="content">
 
-			</div>
-		</section>
+					<p>
+						Actualmente estoy fortaleciendo mis conocimientos en
+						diferentes áreas relacionadas con la tecnología, buscando
+						no solamente aprender conceptos teóricos, sino también
+						aplicarlos en proyectos y ejercicios prácticos.
+					</p>
 
-		<section>
-			<h3 class="post-title">Lo que estoy aprendiendo</h3>
+				</div>
+			</section>
 
-			<div class="content">
+			<section>
+				<h3 class="post-title">Mi proceso</h3>
 
-				<p>
-					Actualmente estoy fortaleciendo mis conocimientos en
-					diferentes áreas relacionadas con la tecnología, buscando
-					no solamente aprender conceptos teóricos, sino también
-					aplicarlos en proyectos y ejercicios prácticos.
-				</p>
+				<div class="content">
 
-			</div>
-		</section>
+					<p>
+						Una de las razones por las que quiero mantener este
+						portafolio es para poder observar mi evolución con el
+						tiempo. En lugar de mostrar únicamente el resultado
+						final, quiero conservar parte del proceso que hay detrás
+						de cada actividad y proyecto.
+					</p>
 
-		<section>
-			<h3 class="post-title">Mi proceso</h3>
+					<p>
+						La idea es que este espacio vaya creciendo junto con mis
+						conocimientos y se convierta en una muestra de las
+						habilidades que voy desarrollando durante mi formación académica.
+					</p>
 
-			<div class="content">
+				</div>
+			</section>
 
-				<p>
-					Una de las razones por las que quiero mantener este
-					portafolio es para poder observar mi evolución con el
-					tiempo. En lugar de mostrar únicamente el resultado
-					final, quiero conservar parte del proceso que hay detrás
-					de cada actividad y proyecto.
-				</p>
-
-				<p>
-					La idea es que este espacio vaya creciendo junto con mis
-					conocimientos y se convierta en una muestra de las
-					habilidades que voy desarrollando durante mi formación académica.
-				</p>
-
-			</div>
-		</section>
-
-	</main>
-</div>
+		</main>
+	</div>
 
 </BlogPostLayout>
