@@ -16,7 +16,7 @@ interface Nav {
 
 // Definir los elementos de navegación
 export const nav: Nav = {
-    avatar: '/assets/sho.png',
+    avatar: '/assets/sho.jpeg',
     items: [
         { label: 'Inicio', href: '/', target: '_self' },
         { label: 'Presentación', href: '/about', target: '_self' },
@@ -119,9 +119,8 @@ export interface FilterItem {
 }
 
 export const filterItems: FilterItem[] = [
-    { content: "💎 Destacadas", dataGroup: "recommend" },
-    { content: "Modelado", dataGroup: "web" },
-    { content: "Normalización", dataGroup: "ui" },
-    { content: "SQL", dataGroup: "3d" },
-    { content: "Proyecto", dataGroup: "brand" },
+	{ content: "Modelado", dataGroup: "modelado" },
+	{ content: "Normalización", dataGroup: "normalizacion" },
+	{ content: "SQL", dataGroup: "sql" },
+	{ content: "Proyecto", dataGroup: "proyecto" },
 ];

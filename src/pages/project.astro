@@ -1,4 +1,5 @@
 ---
+
 import BlogPostLayout from "../layouts/BlogPostLayout.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import ProjectList from '../components/ProjectList.astro';
@@ -7,31 +8,37 @@ import {pageTag, pageDescription,projectTdk} from '../data/content';
 ---
 
 <BlogPostLayout
-		title={projectTdk.title || ''}
-		description = {projectTdk.description || ''}
-		keywords = {projectTdk.keywords || ''}
+	title={projectTdk.title || ''}
+	description={projectTdk.description || ''}
+	keywords={projectTdk.keywords || ''}
 >
-	<div class="post">
-		<main class="post-wrapper about">
-			<SectionHeader
+
+<div class="post">
+
+	<main class="post-wrapper about">
+
+		<SectionHeader
 			tag={pageTag.project}
 			description={pageDescription.project}>
-				作品
-			</SectionHeader>
-			<section class="border-top">
-				<div class="posts">
-					<div class="posts-container">
-							<ProjectList  />
-					</div>
+			Evidencias
+		</SectionHeader>
+
+		<section class="border-top">
+
+			<div class="posts">
+
+				<div class="posts-container">
+
+					<ProjectList />
+
 				</div>
-			</section>
-		</main>
-	</div>
+
+			</div>
+
+		</section>
+
+	</main>
+
+</div>
+
 </BlogPostLayout>
-
-
-<style>
-	.posts{
-		margin-top:24px;
-	}
-</style>
