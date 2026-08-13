@@ -8,7 +8,6 @@
 	document.addEventListener('pointermove', (event) => {
 		const now = Date.now();
 
-		// Evita crear demasiadas estrellas por segundo
 		if (now - lastTime < 120) return;
 		lastTime = now;
 
@@ -19,21 +18,17 @@
 		star.className = 'cursor-star';
 		star.textContent = '⭐';
 
-		// Posición inicial
 		star.style.left = `${event.clientX}px`;
 		star.style.top = `${event.clientY}px`;
 
-		// Tamaño ligeramente aleatorio
 		const size = 12 + Math.random() * 14;
 		star.style.fontSize = `${size}px`;
 
-		// Rotación aleatoria
 		const rotation = Math.random() * 60 - 30;
 		star.style.setProperty('--rotation', `${rotation}deg`);
 
 		trail.appendChild(star);
 
-		// Eliminar la estrella después de la animación
 		setTimeout(() => {
 			star.remove();
 		}, 700);
