@@ -18,7 +18,6 @@ for (const [index,item] of cardData.entries()) {
     category: item.category || "other",
     tag: item.tag || "",
     date: item.date || "",
-    mark: item.mark|| "",
     index: index + 1,
   };
   cards.push(card);
@@ -43,15 +42,16 @@ const count = cards.length;
                   <div class="card-body">
                       <a href={card.detail ? card.detail:"javascript:void(0)"} class="card-figure" target={card.detail ? "_blank":"_self"}>
                         (<img class="card-figure__img lazy"
-                              src={card.cover} loading="lazy"
-                              alt="Loading Animations"
-                        >)
+	                          src={card.cover}
+	                          loading="lazy"
+	                          alt={card.title}
+                        />)
                       </a>
                   </div>
                   <div class="card-footer">
                       <div class="card-detail">
                           <a href={card.detail ? card.detail :"javascript:void(0)"} target={card.detail ? "_blank":"_self"} class="card-name card-item__title">
-                            {card.mark && <span class="tag-original">推荐</span>}   {card.title}
+                            {card.title}
                           </a>
                           <div class="card-info">
                             {card.description}
@@ -267,21 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
     letter-spacing: 1px;
     white-space: nowrap;
 }
-.tag-original{
-  display: block;
-  height: 22px;
-  padding: 0 8px;
-  line-height: 22px;
-  font-size: 12px;
-  font-weight: 400;
-  border-radius: 4px;
-  vertical-align: middle;
-  color: var(--color-900);
-  letter-spacing: 1px;
-  white-space: nowrap;
-  background-color: var(--color-blue);
-  margin-right:6px;
-}
+
 .card{
     &-list{
         display: flex;

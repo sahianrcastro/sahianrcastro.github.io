@@ -104,7 +104,7 @@ interface PageDescription {
 }
 
 export const pageDescription: PageDescription = {
-    index: 'Soy Sahian, estudiante de ingeniería de sistemas interesada en la tecnología, el desarrollo y la innovación. Este espacio reúne mi proceso de aprendizaje y las evidencias de mi trabajo durante Bases de Datos 1',
+    index: 'Soy Sahian, estudiante de ingeniería de sistemas interesada en la tecnología, el desarrollo y la innovación. Este espacio reúne mi proceso de aprendizaje y las evidencias de mi trabajo.',
     project: 'En esta sección econtrarás las evidencias de mi proceso de aprendizaje en Bases de Datos 1: modelado, normalización, SQL y proyecto',
     about: 'Soy estudiante y constantemente actualizo mis conocimientos en toda el área de ingeniería de sistemas',
     blog: 'Un espacio para compartir mis aprendizajes, experiencias y reflexiones durante mi formación académica',
